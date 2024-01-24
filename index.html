@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <title>PawPenny - Solana Meme Token</title>
+    <style>
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #00FFA3, #7F00FF, #00FFA3, #7F00FF);
+    background-size: 200% 400%;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: flex-start;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container img {
+    max-width: 30%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+.nav-container {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.countdown-container {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.social-icons {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #000; 
+    margin: 0 10px;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #555; 
+}
+
+.comic-bubble {
+    position: absolute;
+    top: 100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 4px 4px 0 black;
+    z-index: 10;
+    text-align: center;
+}
+
+
+.comic-bubble p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bangers', cursive; 
+    font-size: 40px; 
+    color: #fec500; 
+    text-shadow:
+        -1px -1px 0 #7d2831,  
+         1px -1px 0 #7d2831,
+        -1px  1px 0 #7d2831,
+         1px  1px 0 #7d2831; 
+}
+
+.comic-bubble.small-bubble {
+    top: auto;
+    bottom: 40px;
+    width: 60%; 
+    font-size: 14px; 
+}
+
+.comic-bubble.small-bubble::before {
+    bottom: auto;
+    top: -20px;
+    transform: rotate(-45deg);
+}
+</style>
+
+</head>
+<body>
+    <div class="social-icons">
+        <a href="https://docs.pawpenny.com" target="_blank"><i class="fa fa-landmark"></i></a>        
+        <a href="https://x.com/pawpenny" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://t.me/pawpenny" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+    </div>
+
+    <div class="comic-bubble">
+        <p>Paw Penny is a token of our love, a small yet significant step towards a world where every pet is cherished, both in pixels and in reality.</p>
+    </div>
+    
+    <div class="logo-container">
+        <img src="https://raw.githubusercontent.com/PawChain-Innovations/img.pawpenny.token/main/pawpenny_no_bg.png" alt="PawPenny Logo">
+    </div>
+
+    <div class="comic-bubble small-bubble">
+        <p>Contract address: coming soon...</p>
+    </div>
+
+</body>
+</html>
+
